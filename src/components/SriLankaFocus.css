@@ -1,0 +1,139 @@
+.srilanka-focus {
+  padding: 8rem 0;
+  background: var(--bg-secondary);
+  position: relative;
+  overflow: hidden;
+}
+
+.srilanka-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.srilanka-text {
+  max-width: 600px;
+}
+
+.srilanka-description {
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.srilanka-details {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.srilanka-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.island-shape {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+  border-radius: 50% 40% 60% 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 30px 60px var(--accent-glow);
+  animation: morphShape 10s ease-in-out infinite;
+}
+
+@keyframes morphShape {
+  0%, 100% {
+    border-radius: 50% 40% 60% 50%;
+  }
+  25% {
+    border-radius: 40% 60% 50% 40%;
+  }
+  50% {
+    border-radius: 60% 50% 40% 60%;
+  }
+  75% {
+    border-radius: 50% 60% 40% 50%;
+  }
+}
+
+.sun-graphic {
+  font-size: 5rem;
+  filter: drop-shadow(0 0 20px rgba(255, 215, 0, 0.5));
+}
+
+.tropical-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.element {
+  position: absolute;
+  font-size: 2rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.element:nth-child(1) {
+  top: 10%;
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.element:nth-child(2) {
+  bottom: 20%;
+  right: 15%;
+  animation-delay: 2s;
+}
+
+.element:nth-child(3) {
+  top: 60%;
+  right: 5%;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) rotate(10deg);
+  }
+}
+
+@media (max-width: 768px) {
+  .srilanka-focus {
+    padding: 5rem 0;
+  }
+
+  .srilanka-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .srilanka-text {
+    max-width: 100%;
+  }
+
+  .island-shape {
+    width: 250px;
+    height: 250px;
+  }
+
+  .sun-graphic {
+    font-size: 4rem;
+  }
+
+  .element {
+    font-size: 1.5rem;
+  }
+}
