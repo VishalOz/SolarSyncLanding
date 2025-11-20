@@ -46,7 +46,7 @@ const Footer = () => {
               whileTap={{ scale: 0.9 }}
               aria-label="Twitter"
             >
-              🐦
+              
             </motion.a>
             <motion.a
               href="#"
@@ -55,7 +55,7 @@ const Footer = () => {
               whileTap={{ scale: 0.9 }}
               aria-label="LinkedIn"
             >
-              💼
+              
             </motion.a>
             <motion.a
               href="#"
@@ -64,7 +64,7 @@ const Footer = () => {
               whileTap={{ scale: 0.9 }}
               aria-label="Instagram"
             >
-              📷
+              
             </motion.a>
           </div>
         </motion.div>

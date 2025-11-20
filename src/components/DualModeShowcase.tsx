@@ -27,7 +27,7 @@ const DualModeShowcase = () => {
             whileHover={{ y: -10 }}
           >
             <div className="mode-header">
-              <span className="mode-icon">☀️</span>
+              <span className="mode-icon"></span>
               <h3>Light Solar Mode</h3>
             </div>
             <p className="mode-description">
@@ -67,7 +67,7 @@ const DualModeShowcase = () => {
             whileHover={{ y: -10 }}
           >
             <div className="mode-header">
-              <span className="mode-icon">🌙</span>
+              <span className="mode-icon"></span>
               <h3>Dark Solar Mode</h3>
             </div>
             <p className="mode-description">

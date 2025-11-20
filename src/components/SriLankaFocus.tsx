@@ -50,13 +50,9 @@ const SriLankaFocus = () => {
                   ease: "easeInOut"
                 }}
               >
-                ☀️
+          
               </motion.div>
-              <div className="tropical-elements">
-                <span className="element">🌴</span>
-                <span className="element">🏝️</span>
-                <span className="element">⚡</span>
-              </div>
+              
             </div>
           </motion.div>
         </motion.div>

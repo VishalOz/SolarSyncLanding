@@ -48,7 +48,7 @@ const FeatureMockups = () => {
               whileHover={{ 
                 y: -15,
                 rotateY: 5,
-                boxShadow: '0 40px 80px var(--accent-glow)'
+                
               }}
             >
               <div className="mockup-phone">
