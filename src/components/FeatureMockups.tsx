@@ -4,21 +4,25 @@ import './FeatureMockups.css';
 const FeatureMockups = () => {
   const mockups = [
     {
-      title: 'Dashboard',
-      description: 'Real-time power metrics at a glance',
+    title: 'Whole Home Dashboard',
+    description: 'Unified view of your energy generation, storage, and consumption',
+    image: '/rest.png',
+  },
+    {
+      title: 'Usage Analytics',
+      description: 'Breakdown of energy consumption by appliance and time of day',
+      image: '/graph.png',
     },
     {
-      title: 'Analytics',
-      description: 'Deep insights and trends',
+      title: 'Smart Energy Assistant',
+      description: 'AI-driven tips to maximize savings and efficiency automatically',
+      image: '/ai.png',
     },
     {
-      title: 'Notifications',
-      description: 'Stay updated on your system',
-    },
-    {
-      title: 'Device Status',
-      description: 'Monitor all connected devices',
-    },
+      title: 'Climate Aware Planning',
+      description: 'Adjust your energy strategy based on upcoming weather patterns',
+      image: '/weather.png',
+    }
   ];
 
   return (
@@ -53,23 +57,9 @@ const FeatureMockups = () => {
             >
               <div className="mockup-phone">
                 <div className="mockup-screen">
-                  <div className="screen-header">
-                    <div className="header-bar"></div>
-                  </div>
+                  
                   <div className="screen-content">
-                    <div className="content-placeholder">
-                      <div className="placeholder-circle"></div>
-                      <div className="placeholder-lines">
-                        <div className="placeholder-line"></div>
-                        <div className="placeholder-line short"></div>
-                      </div>
-                    </div>
-                    <div className="content-grid">
-                      <div className="grid-item"></div>
-                      <div className="grid-item"></div>
-                      <div className="grid-item"></div>
-                      <div className="grid-item"></div>
-                    </div>
+                    <img src={mockup.image} alt={mockup.title} className="mockup-image" />
                   </div>
                 </div>
               </div>
