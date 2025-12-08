@@ -6,17 +6,17 @@ const FeatureMockups = () => {
     {
     title: 'Whole Home Dashboard',
     description: 'Unified view of your energy generation, storage, and consumption',
-    image: '/rest.png',
+    image: '/home.png',
   },
     {
       title: 'Usage Analytics',
       description: 'Breakdown of energy consumption by appliance and time of day',
-      image: '/graph.png',
+      image: '/ai.png',
     },
     {
       title: 'Smart Energy Assistant',
       description: 'AI-driven tips to maximize savings and efficiency automatically',
-      image: '/ai.png',
+      image: '/battery.png',
     },
     {
       title: 'Climate Aware Planning',
@@ -34,7 +34,7 @@ const FeatureMockups = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">Experience Solar Sync</h2>
+          <h2 className="section-title">Experience SolarKoala</h2>
           <p className="section-subtitle">
             Every screen designed with precision and purpose.
           </p>

@@ -1,5 +1,8 @@
 import { motion } from 'framer-motion';
 import './Hero.css';
+import Home from '/home.png';
+import light from '/light.png';
+import dark from '/dark.png';
 
 interface HeroProps {
   isDark: boolean;
@@ -56,7 +59,11 @@ const Hero = ({ isDark, toggleTheme }: HeroProps) => {
           whileTap={{ scale: 0.95 }}
           aria-label="Toggle theme"
         >
-          {isDark ? '☀️' : '🌙'}
+          <img 
+            src={isDark ? light : dark} 
+            alt="theme toggle" 
+            style={{ width: '50px', height: '50px', borderRadius: '100px' }}
+          />
         </motion.button>
 
         <motion.div
@@ -64,7 +71,7 @@ const Hero = ({ isDark, toggleTheme }: HeroProps) => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <h1 className="hero-title">SOLAR SYNC</h1>
+          <h1 className="hero-title">SolarKoala</h1>
           <p className="hero-tagline">Your Solar Power, Perfectly Understood.</p>
           <p className="hero-subtitle">Launching Soon in Sri Lanka.</p>
 
@@ -87,52 +94,7 @@ const Hero = ({ isDark, toggleTheme }: HeroProps) => {
         >
           <div className="phone-frame">
             <div className="phone-screen">
-              <div className="mockup-content">
-                <div className="status-bar">
-                  <span>9:41</span>
-                  <div className="status-icons">
-                    <span>📶</span>
-                    <span>🔋</span>
-                  </div>
-                </div>
-                <div className="app-header">
-                  <h2>Solar Sync</h2>
-                </div>
-                <div className="dashboard-widget">
-                  <div className="power-circle">
-                    <svg viewBox="0 0 100 100" className="circular-progress">
-                      <circle cx="50" cy="50" r="40" fill="none" stroke="var(--border-color)" strokeWidth="8" />
-                      <motion.circle
-                        cx="50"
-                        cy="50"
-                        r="40"
-                        fill="none"
-                        stroke="var(--accent-primary)"
-                        strokeWidth="8"
-                        strokeLinecap="round"
-                        strokeDasharray="251.2"
-                        initial={{ strokeDashoffset: 251.2 }}
-                        animate={{ strokeDashoffset: 62.8 }}
-                        transition={{ duration: 2, delay: 1 }}
-                      />
-                    </svg>
-                    <div className="power-text">
-                      <div className="power-value">4.2</div>
-                      <div className="power-unit">kW</div>
-                    </div>
-                  </div>
-                  <div className="stats-grid">
-                    <div className="stat-item">
-                      <span className="stat-label">Today</span>
-                      <span className="stat-value">28.5 kWh</span>
-                    </div>
-                    <div className="stat-item">
-                      <span className="stat-label">This Month</span>
-                      <span className="stat-value">642 kWh</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <img src={Home} alt="home.png" className="heroImage"/>
             </div>
           </div>
         </motion.div>

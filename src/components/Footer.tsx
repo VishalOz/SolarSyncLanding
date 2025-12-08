@@ -46,7 +46,7 @@ const Footer = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="footer-brand">
-            <h3 className="footer-logo">SOLAR SYNC</h3>
+            <h3 className="footer-logo">SolarKoala</h3>
             <p className="footer-tagline">Your Solar Power, Perfectly Understood.</p>
           </div>
 
@@ -90,7 +90,7 @@ const Footer = () => {
         </motion.div>
 
         <div className="footer-bottom">
-          <p>&copy; Solar Sync 2025. All Rights Reserved.</p>
+          <p>&copy; SolarKoala 2025. All Rights Reserved.</p>
         </div>
       </div>
     </footer>

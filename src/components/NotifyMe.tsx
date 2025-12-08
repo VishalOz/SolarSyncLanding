@@ -27,7 +27,7 @@ const NotifyMe = () => {
         >
           <h2 className="section-title">Get Notified</h2>
           <p className="section-subtitle">
-            Be the first to experience Solar Sync when we launch.
+            Be the first to experience SolarKoala when we launch.
           </p>
 
           {!submitted ? (

@@ -240,6 +240,13 @@
   color: var(--text-primary);
 }
 
+.heroImage {
+  width: 98%;
+  height: 98%;
+  object-fit: contain;
+  border-radius: 32px;
+}
+
 @media (max-width: 768px) {
   .hero-content {
     padding: 3rem 1.5rem;

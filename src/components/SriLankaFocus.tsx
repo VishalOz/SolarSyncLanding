@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import './SriLankaFocus.css';
+import koalaa from '/koalaa.png';
 
 const SriLankaFocus = () => {
   return (
@@ -38,6 +39,7 @@ const SriLankaFocus = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <div className="island-shape">
+              <img src={koalaa} alt="SolarKoala" className="koala-image" />
               <motion.div
                 className="sun-graphic"
                 animate={{
@@ -50,9 +52,8 @@ const SriLankaFocus = () => {
                   ease: "easeInOut"
                 }}
               >
-          
+                
               </motion.div>
-              
             </div>
           </motion.div>
         </motion.div>

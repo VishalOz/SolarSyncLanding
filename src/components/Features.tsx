@@ -34,7 +34,7 @@ const Features = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="section-title">What Solar Sync Does</h2>
+          <h2 className="section-title">What SolarKoala Does</h2>
           <p className="section-subtitle">
             Intelligent solar energy management, simplified.
           </p>

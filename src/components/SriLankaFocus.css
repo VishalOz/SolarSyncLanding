@@ -49,6 +49,14 @@
   animation: morphShape 10s ease-in-out infinite;
 }
 
+.koala-image {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  position: relative;
+  z-index: 2;
+}
+
 @keyframes morphShape {
   0%, 100% {
     border-radius: 50% 40% 60% 50%;
